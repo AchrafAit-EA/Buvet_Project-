@@ -103,13 +103,10 @@ nav {
 
 .nav-links a:hover { color: var(--primary-green); }
 
-/* ✅ ما كاين حتى سهم فـ links */
 .nav-links a .arrow{ display:none; }
-
-/* ✅ زر السهم (Close) مخفي فـ PC */
 .menu-close{ display:none; }
 
-/* Mobile toggle */
+/* Mobile toggle */ 
 .nav-toggle {
   display: none;
   background: transparent;
@@ -119,7 +116,6 @@ nav {
   color: var(--text-dark);
 }
 
-/* ✅ Overlay مخفي فـ PC */
 .nav-overlay { display: none; }
 
 /* Hero */
@@ -299,7 +295,6 @@ nav {
   .hero { height: 75vh; }
   .hero-content h1 { font-size: 2.5rem; }
 
-  /* ✅ زر ☰ */
   .nav-toggle{
     display: grid;
     place-items: center;
@@ -312,30 +307,24 @@ nav {
     cursor: pointer;
   }
 
-  /* ✅ Sidebar menu */
   .nav-links {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
     position: fixed;
     top: 0;
     right: -320px;
     width: 280px;
     height: 100vh;
-
     background: var(--white);
     padding: 18px;
     padding-top: 16px;
-
     box-shadow: -10px 0 25px rgba(0,0,0,.12);
     transition: right .3s ease;
-
     z-index: 2200;
   }
 
   .nav-links.open { right: 0; }
-
   .nav-links li { margin: 0; }
 
   .nav-links a {
@@ -346,7 +335,6 @@ nav {
 
   .nav-links a:hover { background: rgba(74,124,89,.10); }
 
-  /* ✅ زر السهم الواحد داخل sidebar */
   .menu-close{
     display: block;
     margin-bottom: 10px;
@@ -364,7 +352,7 @@ nav {
     place-items: center;
   }
 
-  /* ✅ Overlay */
+  /* ✅ FIX: overlay makblokch click dyal nav links */
   .nav-overlay {
     display: block;
     position: fixed;
