@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeMenu = () => {
     menu.classList.remove("open");
     overlay.classList.remove("show");
+    overlay.style.pointerEvents = "none";
     toggle.setAttribute("aria-expanded", "false");
     toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
   };
@@ -28,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
   overlay.addEventListener("click", closeMenu);
   if (closeBtn) closeBtn.addEventListener("click", closeMenu);
 
-  // smooth scroll + close after click
   links.forEach((a) => {
     a.addEventListener("click", (e) => {
       const href = a.getAttribute("href");
@@ -38,10 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!target) return;
 
       e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
-
-      // ✅ سدّ المينيو من بعد الضغط
       closeMenu();
+
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth" });
+      }, 350);
     });
   });
 
