@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison du Savoir | Buvette & Espace d’Étude</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">MAISON <span>DU SAVOIR</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <!-- un souris de telephone-->
+        <li class="menu-close">
+          <button type="button" class="close-btn" aria-label="Fermer le menu">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+        </li>
+
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- changement de mobile  -->
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-overlay"></div>
+
+  <!-- Premier paragraphe  -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Nourrir le corps, booster l’esprit.</h1>
+      <p>
+        Un espace pensé pour répondre aux besoins des étudiants et des stagiaires,
+        en combinant restauration, calme et conditions favorables à l’apprentissage.
+      </p>
+      <a href="#menu" class="btn">Voir le menu du jour</a>
+    </div>
+  </header>
+
+  <!-- C'est le Body-->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="subtitle">Notre concept</span>
+          <h2>Plus qu’une simple buvette</h2>
+          <p>
+            La Maison du Savoir a été pensée pour répondre aux besoins des stagiaires et des étudiants.
+            Nous savons que la vie d’étudiant est exigeante : c’est pourquoi nous proposons un environnement
+            équilibré, chaleureux et organisé.
+          </p>
+          <p>
+            Que ce soit pour une pause café entre deux cours ou pour travailler au calme, notre espace est là
+            pour accompagner votre réussite.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img src="buvette.jpg" alt="Intérieur de la buvette">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services de travail -->
+  <section id="services" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Conçu pour réussir</h2>
+        <p>Tout ce qu’il faut pour rester productif toute la journée.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Repas & boissons</h3>
+          <p>Des produits abordables, variés et adaptés aux étudiants.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-laptop"></i>
+          <h3>Espace d’étude calme</h3>
+          <p>Tables dédiées, Wi-Fi et prises pour travailler confortablement.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-restroom"></i>
+          <h3>Installations propres</h3>
+          <p>Toilettes séparées et bien entretenues pour l’hygiène et le confort.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu de travail -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Menu adapté aux étudiants</h2>
+        <p>Des prix accessibles et une qualité au rendez-vous.</p>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-category">
+          <h3>Café & Thé</h3>
+          <div class="menu-item"><span>Espresso</span> <span>6 DH</span></div>
+          <div class="menu-item"><span>Café crème</span> <span>7 DH</span></div>
+          <div class="menu-item"><span>Thé vert</span> <span>5 DH</span></div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Autre</h3>
+          <div class="menu-item"><span>Milfeuille</span> <span>3.5 DH</span></div>
+          <div class="menu-item"><span>Cookie</span> <span>3 DH</span></div>
+          <div class="menu-item"><span>Yaourt</span> <span>2.5 DH</span></div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Snacks</h3>
+          <div class="menu-item"><span>Sandwich poulet</span> <span>10 DH</span></div>
+          <div class="menu-item"><span>Sandwich kefta</span> <span>12 DH</span></div>
+          <div class="menu-item"><span>Soupe du jour</span> <span>8 DH</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- les images -->
+  <section id="gallery" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>L’ambiance</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="image1.jpg" alt="Espace d’étude">
+        <img src="image2.jpg" alt="Espace repas">
+        <img src="image3.jpg" alt="Ambiance étudiante">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & finally -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Nous trouver</h3>
+        <p>Bâtiment B, Campus</p>
+        <p>Centre de formation - ISTAG BAB TIZIMI</p>
+      </div>
+
+      <div>
+        <h3>Horaires</h3>
+        <p>Lun - Jeudi : 08:30 - 18:30</p>
+        <p>Vend : 08:30 - 12:30</p>
+        <p>Sam : 09:00 - 13:30</p>
+        <p>Dim : Fermé</p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p>Email : MaisonSavoir@gmail.com</p>
+        <p>Poste interne : 0555222421</p>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <p>&copy; 2026 Maison du Savoir. AHIDAR</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
